@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Remoplus – Empowering Your Remote Team for Success</title>
+<meta name="description" content="Remoplus helps remote teams align tasks, communicate and collaborate in one place.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Reusable SVG icons -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h16M14 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-logo" viewBox="0 0 32 32"><path d="M9 3a6 6 0 0 0-6 6c0 2 1 3.5 2.5 4.5L9 16l-3.5 2.5C4 19.500 3 21 3 23a6 6 0 0 0 6 6c2 0 3.500-1 4.500-2.500L16 23l2.500 3.500C19.500 28 21 29 23 29a6 6 0 0 0 6-6c0-2-1-3.500-2.500-4.500L23 16l3.500-2.500C28 12.500 29 11 29 9a6 6 0 0 0-6-6c-2 0-3.500 1-4.500 2.500L16 9l-2.500-3.500C12.500 4 11 3 9 3Z" fill="none" stroke="currentColor" stroke-width="3.200" stroke-linejoin="round"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M12 2l2.400 1.800 3-.1 1 2.800 2.500 1.700-.9 2.900.9 2.900-2.500 1.700-1 2.800-3-.1L12 22l-2.400-1.800-3 .1-1-2.800-2.500-1.700.9-2.900-.9-2.900 2.500-1.700 1-2.800 3 .1L12 2Z" fill="none" stroke="currentColor" stroke-width="1.400" stroke-linejoin="round"/><path d="m8.500 12 2.500 2.500 4.500-5" fill="none" stroke="currentColor" stroke-width="1.500" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H11l-4 3.500V16H4Z" fill="none" stroke="currentColor" stroke-width="1.500" stroke-linejoin="round"/><path d="M8 10h8" stroke="currentColor" stroke-width="1.500" stroke-linecap="round"/></symbol>
+  <symbol id="i-task" viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="17" rx="3" fill="none" stroke="currentColor" stroke-width="1.500"/><path d="M9 3h6v3H9zM9 11h6M9 15h4" fill="none" stroke="currentColor" stroke-width="1.500" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3.500" y="5" width="17" height="15" rx="3.500" fill="none" stroke="currentColor" stroke-width="1.500"/><path d="M8 3v4M16 3v4M3.500 10h17" stroke="currentColor" stroke-width="1.500" stroke-linecap="round"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="3.500" fill="none" stroke="currentColor" stroke-width="1.500"/><path d="m10 12-1.500 1.500L10 15M14 12l1.500 1.500L14 15M10 5.500h4" fill="none" stroke="currentColor" stroke-width="1.500" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-video" viewBox="0 0 24 24"><rect x="3" y="6" width="13" height="12" rx="3" fill="none" stroke="currentColor" stroke-width="1.500"/><path d="m16 10 5-3v10l-5-3" fill="none" stroke="currentColor" stroke-width="1.500" stroke-linejoin="round"/></symbol>
+  <symbol id="i-call" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3" fill="none" stroke="currentColor" stroke-width="1.500"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3" fill="none" stroke="currentColor" stroke-width="1.500" stroke-linecap="round"/></symbol>
+  <symbol id="i-screen" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="13" rx="4" fill="none" stroke="currentColor" stroke-width="1.500"/><rect x="7.500" y="9" width="9" height="5" rx="1.500" fill="none" stroke="currentColor" stroke-width="1.500"/></symbol>
+  <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3.500" y="3.500" width="7" height="7" rx="2.500" fill="none" stroke="currentColor" stroke-width="1.500"/><rect x="13.500" y="3.500" width="7" height="7" rx="2.500" fill="none" stroke="currentColor" stroke-width="1.500"/><rect x="3.500" y="13.500" width="7" height="7" rx="2.500" fill="none" stroke="currentColor" stroke-width="1.500"/><rect x="13.500" y="13.500" width="7" height="7" rx="2.500" fill="none" stroke="currentColor" stroke-width="1.500"/></symbol>
+  <symbol id="i-share" viewBox="0 0 24 24"><circle cx="12" cy="6" r="2.500" fill="none" stroke="currentColor" stroke-width="1.500"/><circle cx="6" cy="17" r="2.500" fill="none" stroke="currentColor" stroke-width="1.500"/><circle cx="18" cy="17" r="2.500" fill="none" stroke="currentColor" stroke-width="1.500"/><path d="M10.500 8.500 7 14.500M13.500 8.500 17 14.500M8.500 17h7" fill="none" stroke="currentColor" stroke-width="1.500"/></symbol>
+  <symbol id="i-left" viewBox="0 0 24 24"><path d="M20 12H4M10 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.500" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M17.800 3h3l-6.600 7.500L22 21h-6l-4.700-6.200L5.900 21h-3l7-8L2.500 3h6.200l4.300 5.700L17.800 3Zm-1 16.200h1.700L7.600 4.700H5.800l11 14.500Z" fill="currentColor"/></symbol>
+</svg>
+
+<!-- Header -->
+<header class="header">
+  <nav class="nav" aria-label="Main">
+    <a class="brand" href="#top"><svg class="logo"><use href="#i-logo"/></svg>Remoplus</a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#features">Pages <span class="caret">⌄</span></a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+    </ul>
+    <a class="btn btn-lime btn-sm" href="#cta"><span class="btn-icon"><svg><use href="#i-arrow"/></svg></span><span class="btn-label">Book A Demo</span></a>
+    <button class="menu-toggle" aria-label="Toggle menu" aria-controls="nav-links" aria-expanded="false"><span></span><span></span></button>
+  </nav>
+</header>
+
+<main id="top">
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-glow"></div>
+  <div class="container hero-inner">
+    <div class="tag"><span class="avatars"><i></i><i></i><i></i><i></i></span>Where productivity meets simplicity.</div>
+    <h1>Empowering Your Remote<br>Team for Success</h1>
+    <p class="lead">Help your team effectively align tasks for remote work.</p>
+    <div class="btn-row">
+      <a class="btn btn-lime" href="#pricing"><span class="btn-icon"><svg><use href="#i-arrow"/></svg></span><span class="btn-label underline">Get Started</span></a>
+      <a class="btn btn-white" href="#cta"><span class="btn-icon dark"><svg><use href="#i-arrow"/></svg></span><span class="btn-label">Book A Demo</span></a>
+    </div>
+
+    <div class="dashboard hero-dash" data-dashboard></div>
+
+    <div class="brands" aria-label="Trusted by">
+      <span>◌ Logoipsum</span><span>≋ Logoipsum</span><span>⚡ Logoipsum</span><span>⌘ Logoipsum</span><span>✺ logoipsum</span>
+    </div>
+  </div>
+</section>
+
+<!-- Key features -->
+<section class="key-features" id="about">
+  <div class="container grid-4">
+    <article class="kf"><span class="icon-tile"><svg><use href="#i-chat"/></svg></span><h3>Real-Time Messaging</h3><p>Stay connected with your team quick messaging file.</p></article>
+    <article class="kf"><span class="icon-tile"><svg><use href="#i-task"/></svg></span><h3>Task Management</h3><p>Use Kanban boards or lists to manage your team.</p></article>
+    <article class="kf"><span class="icon-tile"><svg><use href="#i-cal"/></svg></span><h3>Shared Calendar</h3><p>Use a calendar to schedule meetings and track deadlines.</p></article>
+    <article class="kf"><span class="icon-tile"><svg><use href="#i-phone"/></svg></span><h3>Mobile App Support</h3><p>Stay productive on the go. Access tasks and files.</p></article>
+  </div>
+</section>
+
+<!-- Problem / solution -->
+<section class="section" id="features">
+  <div class="container">
+    <div class="section-title center">
+      <h2>Built for Teams Like Yours</h2>
+      <p>Our features meet the unique needs of remote teams,<br>helping you achieve more together.</p>
+    </div>
+
+    <div class="split">
+      <div class="panel glow-tr">
+        <div class="mini-card">
+          <div class="mini-head"><b>Pending Tasks</b><span class="dots">•••</span></div>
+          <ul class="task-list">
+            <li><div><b>Designer Team</b> <em>Just Now</em><small>Innovative Creative Design Team</small></div><span class="avatars sm"><i></i><i></i><i></i></span></li>
+            <li><div><b>Development Team</b> <em>1 min ago</em><small>Collaborative Agile Development Team</small></div><span class="avatars sm"><i></i><i></i></span></li>
+            <li><div><b>Marketing Team</b> <em>2 mins ago</em><small>Strategic Marketing Team</small></div><span class="avatars sm"><i></i><i></i><i></i></span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="split-text">
+        <h3 class="h3-xl">Connect Effortlessly</h3>
+        <p class="muted">Real-time communication solutions that keep your entire team aligned, engaged, and working together.</p>
+        <ul class="icon-list">
+          <li><svg><use href="#i-chat"/></svg>Instant Messaging</li>
+          <li><svg><use href="#i-video"/></svg>Video Conferencing</li>
+          <li><svg><use href="#i-call"/></svg>Voice Calls</li>
+          <li><svg><use href="#i-screen"/></svg>Screen Sharing</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="split reverse">
+      <div class="split-text">
+        <h3 class="h3-xl">Work Together, Anywhere</h3>
+        <p class="muted">Innovative collaborative tools designed to significantly boost overall team productivity and efficiency.</p>
+        <div class="mini-features">
+          <div><span><svg><use href="#i-grid"/></svg><b>Shared Workspaces</b></span><p>Build team spaces.</p></div>
+          <div><span><svg><use href="#i-share"/></svg><b>File Sharing</b></span><p>Share files, control access.</p></div>
+        </div>
+        <a class="btn btn-lime" href="#pricing"><span class="btn-icon"><svg><use href="#i-arrow"/></svg></span><span class="btn-label">Learn More</span></a>
+      </div>
+      <div class="panel glow-bl">
+        <div class="mini-card calendar" data-calendar></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="section" id="testimonials">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-title">
+        <h2>Loved by 65k+ People</h2>
+        <p>Every single testimonial is a testament to the<br>profound impact we strive to create every single day.</p>
+      </div>
+      <div class="arrows">
+        <button class="sq-btn" data-slide="-1" aria-label="Previous"><svg><use href="#i-left"/></svg></button>
+        <button class="sq-btn" data-slide="1" aria-label="Next"><svg><use href="#i-arrow"/></svg></button>
+      </div>
+    </div>
+    <div class="slider" id="slider">
+      <article class="card testimonial">
+        <div class="t-top"><svg class="x"><use href="#i-x"/></svg><span>4.8/5 Rating</span><time>Jun 9, 2025</time></div>
+        <blockquote>"After we started using this platform, our efficiency has soared. The integrations work flawlessly, and the tools for collaboration are top-notch."</blockquote>
+        <div class="person"><i class="ph p1"></i><div><b>Bessie Cooper</b><small>The Walt Disney Company</small></div></div>
+      </article>
+      <article class="card testimonial">
+        <div class="t-top"><svg class="x"><use href="#i-x"/></svg><span>3.2/5 Rating</span><time>Jun 10, 2025</time></div>
+        <blockquote>"Our team's productivity has skyrocketed since we adopted this platform. The security features are top-notch, and the mobile app is incredibly convenient."</blockquote>
+        <div class="person"><i class="ph p2"></i><div><b>Emily Rodriguez</b><small>Amazon.com, Inc.</small></div></div>
+      </article>
+      <article class="card testimonial">
+        <div class="t-top"><svg class="x"><use href="#i-x"/></svg><span>4.8/5 Rating</span><time>Jun 9, 2025</time></div>
+        <blockquote>"Since adopting this platform, our productivity has skyrocketed. The seamless integrations and excellent collaboration tools make."</blockquote>
+        <div class="person"><i class="ph p3"></i><div><b>Jack</b><small>Facebook, Inc.</small></div></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Demo -->
+<section class="section">
+  <div class="container">
+    <div class="section-title center">
+      <h2>Simplify Remote Work!</h2>
+      <p>Explore our platform's features to enhance your<br>experience and streamline workflow.</p>
+    </div>
+    <div class="demo-card">
+      <div class="demo-text">
+        <h3 class="h3-xl">Quick Overview Guide</h3>
+        <p class="muted">This walkthrough highlights the unique features that set us apart from the competition.</p>
+        <a class="btn btn-lime" href="#cta"><span class="btn-icon"><svg><use href="#i-arrow"/></svg></span><span class="btn-label">Explore Demo</span></a>
+        <div class="counters">
+          <div><strong><span class="count" data-to="45">0</span><span>+</span></strong><p>New features are released monthly to enhance.</p></div>
+          <div><strong><span class="count" data-to="62">0</span><span>+</span></strong><p>Efficiency has improved significantly overall.</p></div>
+        </div>
+      </div>
+      <div class="dashboard demo-dash" data-dashboard></div>
+    </div>
+  </div>
+</section>
+
+<!-- Pricing -->
+<section class="section" id="pricing">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-title">
+        <h2>Pricing for Teams</h2>
+        <p>Flexible pricing for teams of every size and stage.<br>Upgrade, downgrade, or cancel anytime.</p>
+      </div>
+      <div class="billing" role="group" aria-label="Billing period">
+        <span id="lbl-monthly" class="on">Monthly</span>
+        <button class="switch" id="billing-switch" role="switch" aria-checked="false" aria-label="Bill yearly"><i></i></button>
+        <span id="lbl-yearly">Yearly</span>
+        <span class="pill">25% Off</span>
+      </div>
+    </div>
+    <div class="pricing">
+      <article class="plan">
+        <h3>Starter</h3>
+        <p class="muted">Perfect for individuals or small teams starting out.</p>
+        <div class="price"><strong>Free</strong></div>
+        <ul class="checks">
+          <li><svg><use href="#i-check"/></svg>Up to 5 users</li>
+          <li><svg><use href="#i-check"/></svg>Basic dashboard access</li>
+          <li><svg><use href="#i-check"/></svg>Task creation &amp; management</li>
+          <li><svg><use href="#i-check"/></svg>Real-time messaging</li>
+          <li><svg><use href="#i-check"/></svg>Limited file sharing (5 GB)</li>
+        </ul>
+        <a class="btn btn-lime" href="#cta"><span class="btn-icon"><svg><use href="#i-arrow"/></svg></span><span class="btn-label">Get Started for Free</span></a>
+      </article>
+      <article class="plan featured">
+        <span class="pill popular">Most Popular</span>
+        <h3>Professional</h3>
+        <p class="muted">Ideal for growing teams needing advanced features.</p>
+        <div class="price"><strong>$<span data-monthly="29" data-yearly="22">29</span></strong><span>/month</span></div>
+        <ul class="checks">
+          <li><svg><use href="#i-check"/></svg>Up to 5 users</li>
+          <li><svg><use href="#i-check"/></svg>Everything in Starter</li>
+          <li><svg><use href="#i-check"/></svg>Advanced analytics</li>
+          <li><svg><use href="#i-check"/></svg>Unlimited file sharing</li>
+          <li><svg><use href="#i-check"/></svg>Team management tools</li>
+        </ul>
+        <a class="btn btn-lime" href="#cta"><span class="btn-icon"><svg><use href="#i-arrow"/></svg></span><span class="btn-label">Upgrade Now</span></a>
+      </article>
+      <article class="plan">
+        <h3>Enterprise</h3>
+        <p class="muted">Best for large teams and enterprises with custom needs.</p>
+        <div class="price"><strong>$<span data-monthly="99" data-yearly="74">99</span></strong><span>/month</span></div>
+        <ul class="checks">
+          <li><svg><use href="#i-check"/></svg>Unlimited users</li>
+          <li><svg><use href="#i-check"/></svg>Everything in Professional</li>
+          <li><svg><use href="#i-check"/></svg>Custom workflows</li>
+          <li><svg><use href="#i-check"/></svg>API integrations</li>
+          <li><svg><use href="#i-check"/></svg>Dedicated account manager</li>
+        </ul>
+        <a class="btn btn-lime" href="#cta"><span class="btn-icon"><svg><use href="#i-arrow"/></svg></span><span class="btn-label">Contact Sales</span></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Integrations -->
+<section class="section">
+  <div class="container">
+    <div class="section-title center">
+      <h2>Integrate Effortlessly</h2>
+      <p>Connect with your tools and streamline workflow. Connect<br>daily apps with our integration.</p>
+    </div>
+    <div class="integrations" aria-label="Integrations">
+      <span>❦</span><span>◐</span><span>♪</span><span>≋</span><span>❖</span><span>✿</span><span>✳</span>
+      <span class="break"></span>
+      <span>◠</span><span>⌂</span><span>✺</span><span>N</span><span>◍</span><span>✜</span>
+    </div>
+  </div>
+</section>
+
+<!-- Security -->
+<section class="section">
+  <div class="container">
+    <div class="section-title center">
+      <h2>Security You Can Trust</h2>
+      <p>Experience uninterrupted service and enjoy consistent<br>performance every all day, nonstop.</p>
+    </div>
+    <div class="bento">
+      <article class="panel glow-tr bento-card">
+        <h3>End-to-End Encryption</h3>
+        <p class="muted">Enjoy seamless service and reliable performance around the clock, without any interruptions.</p>
+        <div class="enc"><span class="enc-col"><i></i><i></i><i></i></span><span class="enc-core"><svg><use href="#i-logo"/></svg></span><span class="enc-col"><i></i><i></i><i></i></span></div>
+      </article>
+      <article class="panel glow-tr bento-card">
+        <h3>Global Standards Compliance</h3>
+        <p class="muted">Meet the highest security benchmarks available today for your complete peace of mind.</p>
+        <div class="gantt">
+          <div class="months"><span>Aug</span><span>Sep</span><span>Oct</span></div>
+          <div class="bar b1"><span>Mobile app</span></div>
+          <div class="bar b2 hot"><span>Release Bento</span></div>
+          <div class="bar b3"><span>UI elements</span></div>
+        </div>
+      </article>
+      <article class="stat glow-br"><strong>99%</strong><span>Uptime Guarantee</span></article>
+      <article class="stat glow-br"><strong>1M+</strong><span>Users Worldwide</span></article>
+      <article class="stat glow-br"><strong>24/7</strong><span>Dedicated Support</span></article>
+    </div>
+  </div>
+</section>
+
+<!-- Blog -->
+<section class="section">
+  <div class="container">
+    <div class="section-title center">
+      <h2>Your Journey to Excellence</h2>
+      <p>Our blog provides essential guidance for leading remote<br>teams. Discover key topics that matter to your business.</p>
+    </div>
+    <div class="grid-3">
+      <article class="card blog">
+        <div class="blog-img b1"></div>
+        <h3>Adapting Leadership Styles to Remote Teams</h3>
+        <p class="muted">Explore how managers can adjust their approach to lead effectively.</p>
+        <a class="btn btn-lime btn-sm" href="#"><span class="btn-icon"><svg><use href="#i-arrow"/></svg></span><span class="btn-label">Discover More</span></a>
+      </article>
+      <article class="card blog">
+        <div class="blog-img b2"></div>
+        <h3>Utilizing Communication for Flexibility</h3>
+        <p class="muted">Maximize team efficiency by leveraging asynchronous tools and methods.</p>
+        <a class="btn btn-lime btn-sm" href="#"><span class="btn-icon"><svg><use href="#i-arrow"/></svg></span><span class="btn-label">Discover More</span></a>
+      </article>
+      <article class="card blog">
+        <div class="blog-img b3"></div>
+        <h3>How to Conduct Effective Virtual Team Building.</h3>
+        <p class="muted">Engage your team with fun and creative online team building exercises.</p>
+        <a class="btn btn-lime btn-sm" href="#"><span class="btn-icon"><svg><use href="#i-arrow"/></svg></span><span class="btn-label">Discover More</span></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section cta-wrap" id="cta">
+  <div class="container">
+    <div class="cta">
+      <div>
+        <h2>Rethink Remote Work</h2>
+        <p class="muted">Discover why our platform is the choice for teams. Start your free trial and experience the difference.</p>
+        <a class="btn btn-lime" href="#"><span class="btn-icon"><svg><use href="#i-arrow"/></svg></span><span class="btn-label">Book A Demo</span></a>
+      </div>
+      <div class="chart-card" data-chart></div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a class="brand" href="#top"><svg class="logo"><use href="#i-logo"/></svg>Remoplus</a>
+      <p class="muted">Connect with us on social media and stay updated on the latest news, product updates, and industry insights.</p>
+      <div class="social">
+        <a href="#" aria-label="Facebook">ⓕ</a><a href="#" aria-label="Instagram">◎</a><a href="#" aria-label="X"><svg><use href="#i-x"/></svg></a><a href="#" aria-label="LinkedIn">in</a>
+      </div>
+    </div>
+    <nav><h4>Quick Links</h4><a href="#top">Home</a><a href="#features">Feature</a><a href="#pricing">Pricing</a><a href="#about">About</a></nav>
+    <nav><h4>Others Links</h4><a href="#">Blog</a><a href="#">Case Study</a><a href="#">FAQs</a></nav>
+    <nav><h4>Info</h4><a href="#">Terms &amp; Conditions</a><a href="#">Privacy Policy</a><a href="#">Support</a></nav>
+  </div>
+  <div class="container copy muted">Copyright © 2026 Remoplus. All Rights Reserved Theme Crapt</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
