@@ -283,3 +283,28 @@ blockquote{font-size:16px;line-height:1.5;min-height:96px}
   .bento-card{padding:32px 24px 0}
   .enc-col i{width:56px}
 }
+
+/* Real image assets */
+.logo{display:block;object-fit:contain}
+.avatars img{width:29px;height:29px;border-radius:50%;border:1px solid #fff;margin-left:-10px;object-fit:cover}
+.avatars img:first-child{margin-left:0}
+.brands{align-items:center;opacity:1}
+.brands img{height:36px;width:auto;opacity:.32}
+.dash-img{width:100%;max-width:1014px;height:auto;margin-top:130px;border-radius:24px;box-shadow:0 40px 100px rgba(0,0,0,.5)}
+.demo-shot{align-self:end;overflow:hidden;border-radius:20px 0 0 0;border:1px solid var(--border);border-right:0;border-bottom:0;margin-top:16px}
+.demo-shot img{display:block;width:150%;max-width:none;height:auto}
+.icon-tile img{width:28px;height:28px}
+.icon-list img,.mini-features img{width:20px;height:20px;flex:none}
+.checks img{width:22px;height:22px;flex:none}
+.mock{display:block;width:100%;max-width:440px;height:auto;position:relative}
+.mock-bleed{display:block;width:100%;height:auto;margin-top:24px}
+.bento-card .mock-bleed{margin-top:auto}
+.bento-card{display:flex;flex-direction:column}
+.t-top .x{width:16px;height:16px}
+.person img.ph,.ph{object-fit:cover;background:none}
+.blog-img{display:block;object-fit:cover;height:auto}
+.blog img.blog-img{aspect-ratio:1.5}
+img.chart-card{display:block;padding:0;border:0;background:none;height:auto}
+.social img{width:20px;height:20px}
+.integrations img{width:30px;height:30px}
+.cta{background:radial-gradient(70% 90% at 80% 0,rgba(186,255,56,.15),transparent),url(assets/img/cta-bg.png) center/cover,var(--surface)}
